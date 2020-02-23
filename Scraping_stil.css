@@ -1,19 +1,12 @@
 #headerdiv h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(235, 202, 202);
+    color: rgb(255, 255, 255);
     font-size: 25px;
     margin-top: 20px;
+    font-weight: bold;
 
 }
 
-#ad {
-    float: right;
-    border: 2px solid black;
-    width: 50%;
-    height: 95px;
-    text-align: center;
-    line-height: 95px;
-}
 #demo {
     color: red;
     font-weight: bold;
@@ -22,21 +15,22 @@
 #headerdiv p {
     font-size: 15px;
     margin-top: -10px;
-    color: rgb(235, 202, 202);
+    color: rgb(75, 33, 33));
+    font-weight: bold;
 }
 
 
 
 header, #headerdiv, footer, #footerdiv {
     width: 100%;
-    background: rgb(74, 74, 104);
+    background: rgb(57, 177, 77);
     
 }
 
 #main {
     width:710px;
     margin: auto;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(160, 216, 128);
 }
 
 #d1 {
@@ -65,7 +59,7 @@ h3 {
 
 
 body {
-    background-color: rgb(252, 240, 232);
+    background-color: rgb(184, 226, 159);
 }
 
 html, body {
