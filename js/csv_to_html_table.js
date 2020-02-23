@@ -16,7 +16,7 @@ CsvToHtmlTable = {
             customTemplates[colIdx] = func;
         });
 
-        var $table = $("<table class='table table-striped table-condensed ' id='" + el + "-table'></table>");
+        var $table = $("<table style='border:none;' class='table table-striped table-condensed' id='" + el + "-table'></table>");
         var $containerElement = $("#" + el);
         $containerElement.empty().append($table);
 
@@ -27,7 +27,7 @@ CsvToHtmlTable = {
                 var csvHeaderRow = csvData[0];
                 var $tableHeadRow = $("<tr></tr>");
                 for (var headerIdx = 0; headerIdx < csvHeaderRow.length; headerIdx++) {
-                    $tableHeadRow.append($("<th style='border:2px black solid; background-color: rgb(116, 116, 158); color:white;'></th>").text(csvHeaderRow[headerIdx]));
+                    $tableHeadRow.append($("<th style='border:0px black solid; background-color: rgb(57, 177, 77); color:white;'></th>").text(csvHeaderRow[headerIdx]));
                 }
                 $tableHead.append($tableHeadRow);
 
