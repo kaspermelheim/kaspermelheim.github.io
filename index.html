@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>ToppNyheter</title>
-    <meta content="Display any CSV file as a searchable, filterable, pretty HTML table" />
+    <title>ToppNyheter.no</title>
+    <meta content="Toppnyheter, samlet på en plass. Toppnyheter.no." />
+    <meta content="Breaking news. VG.no, dagbladet.no, tv2.no, nrk.no."/>
     <script data-ad-client="ca-pub-1299524839153646" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +20,7 @@
       <script type="text/javascript" src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script type="text/javascript" src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
   </head>
 
   <body onload="lastUpdated()">
@@ -28,6 +30,7 @@
           <p>De mest interessante nyhetene, samlet på en plass</p>
       </div>
       <div id="google_translate_element" style="float: right; margin-right: 10px;"></div>
+
     </header>
       <div class="container-fluid" style="margin-top:50px;">
         
@@ -48,11 +51,8 @@
 
           <button onclick="topFunction()" id="myBtn" title="Go to top">Toppen</button>
 
-          
-  
-
-    </div>
-        </footer>
+  </div>
+</footer>
 
         <div id="social">
           <a href="http://www.instagram.com/kaspermelheim" target="_blank"><img src="instagram.png" width="40px" height="40px" alt="Programming languages"></a>
@@ -60,7 +60,6 @@
         </div>
 
         <!-- Bootstrap core JavaScript
-      
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -72,13 +71,13 @@
 
     <script type="text/javascript">
 
-    //Legger til link til extern side
+      //Add href link to element
       function format_link(link){
         if (link)
           return "<div style='width:100%;text-align:center;margin-top:50px;'><a href='" + link + "' target='_blank' style='font-size:25px;'>" + link + "</a></div>";
       }
 
-      //Legger til image tag
+      //Add img src to element
       function format_image(link) {
         if (link)
           return "<a href='" + link + "' target='_blank'><img src='" + link + "' alt='test' width='275px' height='200px' style='margin-left: auto;margin-right:auto;display:block;'></a>";
@@ -123,7 +122,9 @@
   }
   </script>
 
+  
 <script>
+  //Checks when document was last updated
   function lastUpdated() {
     var x = new Date(document.lastModified);
     document.getElementById("demo").innerHTML = "Sist oppdatert: " +x;
@@ -131,6 +132,7 @@
   </script>
 
 <script type="text/javascript">
+  //Change language of website content
   function googleTranslateElementInit() {
     new google.translate.TranslateElement({pageLanguage: 'no'}, 'google_translate_element');
   }
