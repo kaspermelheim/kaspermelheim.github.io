@@ -32,17 +32,18 @@
 
 header {
     display: block;
-    border-bottom: 8px solid rgb(0, 70, 0);
+    border-bottom: 8px solid #01435c;
 }
 
 footer {
-    border-top: 8px solid rgb(0, 70, 0);
+    border-top: 8px solid #01435c;
 }
 
 
 header, #headerdiv, footer, #footerdiv {
     width: 100%;
-    background: #21B334;
+    /*background: #21B334;*/
+    background: #009fdc;
 }
 
 #main {
