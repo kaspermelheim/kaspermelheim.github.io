@@ -1,6 +1,6 @@
 #headerdiv h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 70, 0);
     font-size: 25px;
     margin-top: 20px;
     font-weight: bold;
@@ -8,29 +8,47 @@
 }
 
 #demo {
-    color: red;
+    color: rgb(0, 66, 0);
     font-weight: bold;
-    width: 45%;
+    float: right;
 }
-#headerdiv p {
-    font-size: 15px;
-    margin-top: -10px;
-    color: rgb(75, 33, 33));
-    font-weight: bold;
+#headerdiv {
+    display: block;
+    
 }
 
+
+#demodiv {
+    float: right;
+}
+
+#headerdiv p {
+    font-size: 12px;
+    margin-top: -10px;
+    color: rgb(0, 70, 0);
+    font-weight: bold;
+    width: 250px;
+}
+
+header {
+    display: block;
+    border-bottom: 8px solid rgb(0, 70, 0);
+}
+
+footer {
+    border-top: 8px solid rgb(0, 70, 0);
+}
 
 
 header, #headerdiv, footer, #footerdiv {
     width: 100%;
-    background: rgb(57, 177, 77);
-    
+    background: rgb(16, 182, 10);
 }
 
 #main {
     width:710px;
     margin: auto;
-    background-color: rgb(160, 216, 128);
+    background-color: rgb(185, 197, 177);
 }
 
 #d1 {
@@ -47,7 +65,6 @@ h2, h3 {
 
 h3 {
     margin-top: 30px;
-
 }
 
 #mainimg, #imgdiv p {
@@ -59,7 +76,7 @@ h3 {
 
 
 body {
-    background-color: rgb(184, 226, 159);
+    background-color: rgb(240, 241, 240);
 }
 
 html, body {

@@ -26,19 +26,21 @@
   <body onload="lastUpdated()">
     <header>
       <div id="headerdiv">
-        <h1><a style="text-decoration: none;color:rgb(75, 33, 33);"href="https://kaspermelheim.github.io/">ToppNyheter</a></h1>
+        <h1><a style="text-decoration: none;color:rgb(0, 54, 0);"href="https://kaspermelheim.github.io/">ToppNyheter</a></h1>
           <p>De mest interessante nyhetene, samlet på en plass</p>
+          <div style="bottom:35px;width: 50%px;"id="demodiv">
+            <p style="font-size: 8px;width: 100%;"id="demo">Sist oppdatert: </p>
+          </div>
       </div>
       <div id="google_translate_element" style="float: right; margin-right: 10px;"></div>
 
     </header>
-      <div class="container-fluid" style="margin-top:50px;">
+      <div class="container-fluid" style="margin-top:35px;">
         
         <p style="width:100%">De største nyhetene fra dine favoritt nyhetsmedia, samlet på et sted. Klikk deg inn på linken til i saken du vil lese mer om, du blir sendt til
-          komplett artikkel på utgiver sin side. Nederst på siden har du og mulighet til å laste ned all infoen som en CSV fil. Du har og mulighetene til 
-          å søke i artiklene, for å filtrere hva som blir vist.  
+          komplett artikkel på utgiver sin side. Nederst på siden har du og mulighet til å laste ned all infoen som en CSV fil. Du har of mulighetene til 
+          å søke i artikklene, for å filtrere artikkler som blir vist.  
         </p>
-          <p id="demo">Sist oppdatert: </p>
       <div id='table-container'></div>
     </div><!-- /.container -->
 
@@ -76,13 +78,13 @@
       //Add href link to element
       function format_link(link){
         if (link)
-          return "<a href='" + link + "' target='_blank' style='margin-top:25px;float:left;font-size:15px;'><p>Les hele saken</p></a>";
+          return "<a href='" + link + "' target='_blank' style='padding:15px;float:left;font-size:15px;'><p>Les hele saken</p></a>";
       }
 
       //Add img src to element
       function format_image(link) {
         if (link)
-          return "<a href='" + link + "' target='_blank'><img src='" + link + "' alt='test'  width='125px' height='auto' style='vertical-align:middle;margin-left: auto;margin-right:auto;display:block;'></a>";
+          return "<a href='" + link + "' target='_blank'><img src='" + link + "' alt='test'  width='175px' height='auto' style='padding:15px;vertical-align:middle;margin-left: auto;margin-right:auto;display:block;'></a>";
         else
           return "";
       }
@@ -90,7 +92,7 @@
       //Add text style
       function format_text(link) {
         if(link)
-          return "<p style='margin-top:25px;font-weight:bold;font-size:15px;text-align:center;'>"+link+"</p>";
+          return "<p style='padding:18px;Sfont-weight:bold;font-size:15px;text-align:center;'>"+link+"</p>";
       }
       
 
@@ -145,4 +147,3 @@
   
   </body>
 </html>
-

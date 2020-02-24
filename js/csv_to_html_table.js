@@ -27,7 +27,7 @@ CsvToHtmlTable = {
                 var csvHeaderRow = csvData[0];
                 var $tableHeadRow = $("<tr></tr>");
                 for (var headerIdx = 0; headerIdx < csvHeaderRow.length; headerIdx++) {
-                    $tableHeadRow.append($("<th style='border:none; background-color: rgb(57, 177, 77); color:white;'></th>").text(csvHeaderRow[headerIdx]));
+                    $tableHeadRow.append($("<th style='text-align:center;text-shadow:-1px -1px black;border-bottom:6px solid rgb(0, 70, 0); background-color: rgb(16, 182, 10); color:white;'></th>").text(csvHeaderRow[headerIdx]));
                 }
                 $tableHead.append($tableHeadRow);
 
@@ -58,4 +58,3 @@ CsvToHtmlTable = {
             });
     }
 };
-
