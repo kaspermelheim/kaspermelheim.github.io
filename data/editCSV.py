@@ -22,7 +22,7 @@ def test2():
                     #Hvor mange rader du vil ha ut i ny csv fil
                     
                 #wtr.writerow(( r[-1], r[3],r[7]))
-                wtr.writerow((r[4],r[3],r[5])) 
+                wtr.writerow((r[4],r[5],r[3])) 
                     #wtr.writerow(('"'+r[-1]+'"','"'+r[3]+'"','"'+r[4]+'"','"'+r[5]+'"','"'+r[6]+'"','"'+r[7]+'"')) 
 
 test2()
