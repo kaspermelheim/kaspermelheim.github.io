@@ -10,7 +10,7 @@ import csv
 def test2():
 
     #Fil du vil hente data fra
-    with open("vg.csv","r", encoding='utf8') as source:
+    with open("vg_alle_nyheter.csv","r", encoding='utf8') as source:
         rdr= csv.reader(source, delimiter=',')
         #Fil du vil skrive til
         with open("test.csv","w", encoding='utf8') as result:
@@ -22,7 +22,7 @@ def test2():
                     #Hvor mange rader du vil ha ut i ny csv fil
                     
                 #wtr.writerow(( r[-1], r[3],r[7]))
-                wtr.writerow((r[4],r[6],r[3])) 
+                wtr.writerow((r[4],r[3],r[5])) 
                     #wtr.writerow(('"'+r[-1]+'"','"'+r[3]+'"','"'+r[4]+'"','"'+r[5]+'"','"'+r[6]+'"','"'+r[7]+'"')) 
 
 test2()
